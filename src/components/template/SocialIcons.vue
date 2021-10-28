@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-row justify-center space-x-4 social-icons mt-1">
+  <nav class="flex flex-row justify-center space-x-2 social-icons mt-1">
     <a
       href="https://www.facebook.com/nicholas.cartwright1"
       target="_blank"
