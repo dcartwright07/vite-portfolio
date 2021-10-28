@@ -1,9 +1,5 @@
 <template>
-  <img
-    src="/src/assets/logo.svg"
-    :width="imageWidth"
-    alt="Dominic Cartwright Logo"
-  />
+  <img :src="image" :width="imageWidth" alt="Dominic Cartwright Logo" />
 </template>
 
 <script>
@@ -12,6 +8,18 @@ export default {
     imageWidth: {
       type: Number,
       default: 200,
+    },
+    color: {
+      type: String,
+      default: 'black',
+    },
+  },
+
+  computed: {
+    image() {
+      return this.color === 'white'
+        ? '/src/assets/logo-w.svg'
+        : '/src/assets/logo.svg'
     },
   },
 }
