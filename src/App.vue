@@ -7,14 +7,14 @@
       <RouterView :theme="appTheme" />
     </transition>
 
-    <back-to-top
+    <!-- <back-to-top
       visibleoffset="500"
       right="40px"
       bottom="40px"
       class="shadow-lg"
     >
       <i data-feather="arrow-up"></i>
-    </back-to-top>
+    </back-to-top> -->
 
     <Footer />
   </div>
