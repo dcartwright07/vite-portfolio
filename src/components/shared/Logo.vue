@@ -18,8 +18,8 @@ export default {
   computed: {
     image() {
       return this.color === 'white'
-        ? '/src/assets/images/logo-w.svg'
-        : '/src/assets/images/logo.svg'
+        ? '../assets/images/logo-w.svg'
+        : '../assets/images/logo.svg'
     },
   },
 }
