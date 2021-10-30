@@ -2,7 +2,7 @@
   <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
     <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
       <img
-        src="../../assets/images/profile.jpeg"
+        src="../../assets/images/profile-square.jpg"
         class="rounded-xl w-96"
         alt=""
       />
@@ -29,21 +29,6 @@ export default {
           bio:
             "I seek to provide web solutions for companies and non-profit organizations that will enhance their vision and achieve their goals. I am also a technology enthusiast, philosophical thinker, and people-lover. Being of Caribbean descent, I like to chill to reggae tunes and I get really excited when I'm talking to people.",
         },
-        {
-          id: 2,
-          bio:
-            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-        },
-        // {
-        //   id: 3,
-        //   bio:
-        //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-        // },
-        // {
-        //   id: 4,
-        //   bio:
-        //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-        // },
       ],
     }
   },
