@@ -3,6 +3,9 @@
 </template>
 
 <script>
+import WhiteLogo from '../../assets/images/logo-w.svg'
+import BlackLogo from '../../assets/images/logo.svg'
+
 export default {
   props: {
     imageWidth: {
@@ -17,9 +20,7 @@ export default {
 
   computed: {
     image() {
-      return this.color === 'white'
-        ? '../assets/images/logo-w.svg'
-        : '../assets/images/logo.svg'
+      return this.color === 'white' ? WhiteLogo : BlackLogo
     },
   },
 }
