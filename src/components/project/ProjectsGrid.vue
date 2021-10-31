@@ -54,9 +54,12 @@
 <script>
 import feather from 'feather-icons'
 
-const projectImages = import.meta.glob(
-  '/src/assets/images/projects/*.@(jpg|png)',
-)
+import WebProject1 from '../../assets/images/projects/web-project-1.jpg'
+import WebProject2 from '../../assets/images/projects/web-project-2.jpg'
+import MobileProject1 from '../../assets/images/projects/mobile-project-1.jpg'
+import MobileProject2 from '../../assets/images/projects/mobile-project-2.jpg'
+import UIProject1 from '../../assets/images/projects/ui-project-1.jpg'
+import UIProject2 from '../../assets/images/projects/ui-project-2.jpg'
 
 export default {
   name: 'Projects',
@@ -68,50 +71,40 @@ export default {
           id: 1,
           title: 'Google Health Platform',
           category: 'Wen Application',
-          img: this.imageUrl('web-project-2.jpg'),
+          img: WebProject2,
         },
         {
           id: 2,
           title: 'Pheonix Digital Agenncy',
           category: 'Mobile Application',
-          img: this.imageUrl('mobile-project-2.jpg'),
+          img: MobileProject2,
         },
         {
           id: 3,
           title: 'Project Management UI',
           category: 'UI / Frontend',
-          img: this.imageUrl('ui-project-1.jpg'),
+          img: UIProject1,
         },
         {
           id: 4,
           title: 'Cloud Storage Platform',
           category: 'UI / Frontend',
-          img: this.imageUrl('ui-project-2.jpg'),
+          img: UIProject2,
         },
         {
           id: 5,
           title: 'Kabul Social App',
           category: 'Mobile Application',
-          img: this.imageUrl('mobile-project-1.jpg'),
+          img: MobileProject1,
         },
         {
           id: 6,
           title: 'Apple Design System',
           category: 'Web Application',
-          img: this.imageUrl('web-project-1.jpg'),
+          img: WebProject1,
         },
       ],
     }
-  },
-
-  methods: {
-    imageUrl(value) {
-      const imageArray = Object.values(projectImages)
-      const imageUrl = imageArray.find(
-        (image) => image.name.split('/')[5] === value,
-      )
-      return imageUrl.name
-    },
   },
 
   mounted() {

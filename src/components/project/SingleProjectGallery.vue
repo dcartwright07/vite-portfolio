@@ -15,9 +15,9 @@
 </template>
 
 <script>
-const projectImages = import.meta.glob(
-  '/src/assets/images/projects/*.@(jpg|png)',
-)
+import WebProject2 from '../../assets/images/projects/web-project-2.jpg'
+import MobileProject2 from '../../assets/images/projects/mobile-project-2.jpg'
+import UIProject1 from '../../assets/images/projects/ui-project-1.jpg'
 
 export default {
   data() {
@@ -26,30 +26,20 @@ export default {
         {
           id: 1,
           title: 'Kabul Project Management UI',
-          img: this.imageUrl('ui-project-1.jpg'),
+          img: UIProject1,
         },
         {
           id: 2,
           title: 'Kabul Project Management UI',
-          img: this.imageUrl('web-project-2.jpg'),
+          img: WebProject2,
         },
         {
           id: 3,
           title: 'Kabul Project Management UI',
-          img: this.imageUrl('mobile-project-2.jpg'),
+          img: MobileProject2,
         },
       ],
     }
-  },
-
-  methods: {
-    imageUrl(value) {
-      const imageArray = Object.values(projectImages)
-      const imageUrl = imageArray.find(
-        (image) => image.name.split('/')[5] === value,
-      )
-      return imageUrl.name
-    },
   },
 }
 </script>
