@@ -11,28 +11,28 @@
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
       <div>
         <img
-          :src="MobileProject2"
+          src="../../assets/images/projects/mobile-project-1.jpg"
           class="rounded-2xl cursor-pointer"
           alt="Related Project"
         />
       </div>
       <div>
         <img
-          :src="WebProject1"
+          src="../../assets/images/projects/web-project-1.jpg"
           class="rounded-2xl cursor-pointer"
           alt="Related Project"
         />
       </div>
       <div>
         <img
-          :src="UIProject2"
+          src="../../assets/images/projects/ui-project-2.jpg"
           class="rounded-2xl cursor-pointer"
           alt="Related Project"
         />
       </div>
       <div>
         <img
-          :src="MobileProject1"
+          src="../../assets/images/projects/mobile-project-1.jpg"
           class="rounded-2xl cursor-pointer"
           alt="Related Project"
         />
@@ -42,11 +42,6 @@
 </template>
 
 <script>
-import WebProject1 from '../../assets/images/projects/web-project-1.jpg'
-import MobileProject1 from '../../assets/images/projects/mobile-project-1.jpg'
-import MobileProject2 from '../../assets/images/projects/mobile-project-2.jpg'
-import UIProject2 from '../../assets/images/projects/ui-project-2.jpg'
-
 export default {
   setup() {},
 }
