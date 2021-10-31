@@ -1,7 +1,11 @@
 <template>
   <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
     <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-      <img :src="ProfileImage" class="rounded-xl w-96" alt="" />
+      <img
+        src="../../assets/images/profile-square.jpg"
+        class="rounded-xl w-96"
+        alt=""
+      />
     </div>
     <div class="w-full sm:w-3/4 text-left">
       <p
@@ -16,8 +20,6 @@
 </template>
 
 <script>
-import ProfileImage from '../../assets/images/profile-square.jpg'
-
 export default {
   setup() {
     return {
