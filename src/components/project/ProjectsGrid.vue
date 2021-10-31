@@ -54,12 +54,12 @@
 <script>
 import feather from 'feather-icons'
 
-import WebProject1 from '../../assets/images/projects/web-project-1.jpg'
-import WebProject2 from '../../assets/images/projects/web-project-2.jpg'
-import MobileProject1 from '../../assets/images/projects/mobile-project-1.jpg'
-import MobileProject2 from '../../assets/images/projects/mobile-project-2.jpg'
-import UIProject1 from '../../assets/images/projects/ui-project-1.jpg'
-import UIProject2 from '../../assets/images/projects/ui-project-2.jpg'
+import TaylorUniversity from '../../assets/images/projects/taylor.jpg'
+import BGCMarion from '../../assets/images/projects/bgc-marion.png'
+import MissionPoint from '../../assets/images/projects/missionpoint.jpg'
+import PositivelyBlackford from '../../assets/images/projects/positivelyblackford.jpg'
+import HamiltonEyecare from '../../assets/images/projects/hamilton-eyecare.jpg'
+import TiptonCountyIn from '../../assets/images/projects/tipton-county-in.png'
 
 export default {
   name: 'Projects',
@@ -69,39 +69,39 @@ export default {
       projects: [
         {
           id: 1,
-          title: 'Google Health Platform',
-          category: 'Wen Application',
-          img: WebProject2,
+          title: 'Community Engagement',
+          category: 'Website',
+          img: BGCMarion,
         },
         {
           id: 2,
-          title: 'Pheonix Digital Agenncy',
-          category: 'Mobile Application',
-          img: MobileProject2,
+          title: 'Digital News Outlet',
+          category: 'Website',
+          img: PositivelyBlackford,
         },
         {
           id: 3,
-          title: 'Project Management UI',
-          category: 'UI / Frontend',
-          img: UIProject1,
+          title: 'Optometry Office',
+          category: 'Website',
+          img: HamiltonEyecare,
         },
         {
           id: 4,
-          title: 'Cloud Storage Platform',
-          category: 'UI / Frontend',
-          img: UIProject2,
+          title: 'Community Foundation',
+          category: 'Website',
+          img: TiptonCountyIn,
         },
         {
           id: 5,
-          title: 'Kabul Social App',
-          category: 'Mobile Application',
-          img: MobileProject1,
+          title: 'Church Community Engagement',
+          category: 'Website',
+          img: MissionPoint,
         },
         {
           id: 6,
-          title: 'Apple Design System',
+          title: 'Lead Generation Platform',
           category: 'Web Application',
-          img: WebProject1,
+          img: TaylorUniversity,
         },
       ],
     }

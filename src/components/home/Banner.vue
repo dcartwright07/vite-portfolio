@@ -15,10 +15,10 @@
       </p>
       <div class="flex justify-center sm:block">
         <a
-          download="Stoman-Resume.pdf"
-          href="/files/Stoman-Resume.pdf"
+          download="Dominic-CV.pdf"
+          href="../../assets/files/Dominic CV-2021.pdf"
           class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg py-2.5 sm:py-3 shadow-lg rounded-xl bg-red-700 hover:bg-red-800 text-gray-100 hover:text-white"
-          aria-label="Download Resume"
+          aria-label="Download CV"
         >
           <i
             data-feather="arrow-down-circle"
