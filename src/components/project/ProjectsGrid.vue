@@ -54,6 +54,10 @@
 <script>
 import feather from 'feather-icons'
 
+const projectImages = import.meta.glob(
+  '/src/assets/images/projects/*.@(jpg|png)',
+)
+
 export default {
   name: 'Projects',
 
@@ -64,41 +68,50 @@ export default {
           id: 1,
           title: 'Google Health Platform',
           category: 'Wen Application',
-          img: '../../assets/images/web-project-2.jpg',
+          img: this.imageUrl('web-project-2.jpg'),
         },
         {
           id: 2,
           title: 'Pheonix Digital Agenncy',
           category: 'Mobile Application',
-          img: '../../assets/images/mobile-project-2.jpg',
+          img: this.imageUrl('mobile-project-2.jpg'),
         },
         {
           id: 3,
           title: 'Project Management UI',
           category: 'UI / Frontend',
-          img: '../../assets/images/ui-project-1.jpg',
+          img: this.imageUrl('ui-project-1.jpg'),
         },
         {
           id: 4,
           title: 'Cloud Storage Platform',
           category: 'UI / Frontend',
-          img: '../../assets/images/ui-project-2.jpg',
+          img: this.imageUrl('ui-project-2.jpg'),
         },
         {
           id: 5,
           title: 'Kabul Social App',
           category: 'Mobile Application',
-          img: '../../assets/images/mobile-project-1.jpg',
+          img: this.imageUrl('mobile-project-1.jpg'),
         },
         {
           id: 6,
           title: 'Apple Design System',
           category: 'Web Application',
-          img: '../../assets/images/web-project-1.jpg',
+          img: this.imageUrl('web-project-1.jpg'),
         },
       ],
-      // publicPath: process.env.BASE_URL,
     }
+  },
+
+  methods: {
+    imageUrl(value) {
+      const imageArray = Object.values(projectImages)
+      const imageUrl = imageArray.find(
+        (image) => image.name.split('/')[5] === value,
+      )
+      return imageUrl.name
+    },
   },
 
   mounted() {
