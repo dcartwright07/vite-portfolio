@@ -11,7 +11,7 @@
     <AboutCounter />
 
     <div class="container mx-auto">
-      <Clients />
+      <Clients :clients="clients" />
     </div>
   </div>
 </template>
@@ -36,12 +36,19 @@ export default {
   data() {
     return {
       profile: {},
+      clients: [],
     }
   },
 
   async created() {
-    const { data } = await axios.get('http://api.dominiccartwright.com/profile')
-    this.profile = data
+    const profileData = await axios.get(
+      'http://api.dominiccartwright.com/profile',
+    )
+    this.profile = profileData.data
+    const clientData = await axios.get(
+      'http://api.dominiccartwright.com/clients',
+    )
+    this.clients = clientData.data
   },
 
   async mounted() {
