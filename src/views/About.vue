@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="container mx-auto">
-      <AboutMe />
+      <AboutMe
+        :bio="profile.bio"
+        :image="profile.image.url"
+        :name="profile.name"
+      />
     </div>
 
     <AboutCounter />
@@ -18,6 +22,8 @@ import AboutCounter from '../components/about/AboutCounter.vue'
 import Clients from '../components/about/Clients.vue'
 import feather from 'feather-icons'
 
+import axios from 'axios'
+
 export default {
   name: 'About',
 
@@ -27,7 +33,18 @@ export default {
     Clients,
   },
 
-  mounted() {
+  data() {
+    return {
+      profile: {},
+    }
+  },
+
+  async created() {
+    const { data } = await axios.get('http://api.dominiccartwright.com/profile')
+    this.profile = data
+  },
+
+  async mounted() {
     feather.replace()
   },
 
