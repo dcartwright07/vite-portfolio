@@ -1,0 +1,10 @@
+printWidth: 90
+tabWidth: 4
+useTabs: false
+vueIndentScriptAndStyle: false
+semi: false
+bracketSpacing: true
+htmlWhitespaceSensitivity: ignore
+endOfLine: lf
+allowParens: always
+singleQuote: true
